@@ -1,10 +1,12 @@
 # .woodpecker.yml
-# Minimal hello world on Kubernetes backend
+when:
+  event: [push, pull_request]   # ← add this
+
 steps:
   build:
     image: alpine:3.20
     commands:
-      - echo "Hello from Woodpecker on k8s + Cloudflare Tunnel 👋"
+      - echo "Hello from Woodpecker 👋"
       - uname -a
       - cat /etc/os-release
 
