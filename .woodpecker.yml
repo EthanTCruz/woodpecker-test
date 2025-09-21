@@ -1,0 +1,8 @@
+pipeline:
+  build:
+    image: alpine:3.20
+    commands:
+      - echo "Hello from Woodpecker on k8s + Cloudflare Tunnel 👋"
+      - uname -a
+      - cat /etc/os-release
+
