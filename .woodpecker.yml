@@ -1,4 +1,6 @@
-pipeline:
+# .woodpecker.yml
+# Minimal hello world on Kubernetes backend
+steps:
   build:
     image: alpine:3.20
     commands:
